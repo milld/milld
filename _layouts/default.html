@@ -7,9 +7,17 @@
         align-items: center;
       }
     </style>
+    
+    <script src="https://cdn.scaleflex.it/filerobot/js-cloudimage-responsive/v1.0.10.min.js"></script>
+    <script>
+      const ciResponsive = new window.CIResponsive({
+        token: 'demo',
+        baseUrl: 'https://cloudimage.public.airstore.io/demo/' // optional
+      });
+    </script>
   </head>
   <body>
-    <img id="logo" src="https://github.com/milld/milld.github.io/blob/master/_layouts/logo.png" />
-    <img id="cover" src="https://github.com/milld/milld.github.io/blob/master/_layouts/milldcover.png" />
+    <img id="logo" ci-src="https://github.com/milld/milld.github.io/blob/master/_layouts/logo.png" />
+    <img id="cover" ci-src="https://github.com/milld/milld.github.io/blob/master/_layouts/milldcover.png" />
   </body>
 </html>
